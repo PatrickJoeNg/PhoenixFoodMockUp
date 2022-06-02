@@ -1,0 +1,165 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<style>
+
+    .carousel-item {
+        height: 32rem;
+        background: #777;
+    }
+
+        .carousel-item > img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            min-width: 100%;
+            height: 32rem;
+        }
+
+    .carousel-caption {
+        background-color: rgba(196, 23, 29, 0.6);
+        bottom: 3rem;
+        z-index: 10;
+    }
+
+    .deal-packages-container {
+        background: url("https://github.com/weiyuanlee-if/heavenlybirdrestaurant/blob/main/images/pattern1.png?raw=true");
+    }
+
+    .catering-container {
+        background: url("https://github.com/weiyuanlee-if/heavenlybirdrestaurant/blob/main/images/pattern2.png?raw=true");
+    }
+</style>
+
+<div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1013&q=80"
+                 alt="food"
+                 class="d-block w-100" />
+            <div class="carousel-caption">
+                <h1>Welcome!</h1>
+                <p>
+                    Pheonix offers authentic American Chinese Cuisine.
+                </p>
+                <a href="#" class="btn btn-light">Order Online</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://weiyuanlee-if.github.io/heavenlybirdrestaurant/images/dumplingcta.png"
+                 alt="food platters"
+                 class="d-block w-100 " />
+            <div class="carousel-caption">
+                <h1>Check our Menu!</h1>
+                <p>
+                    Our menu offers a variety of delicous dishes! How can we serve you today?
+                </p>
+                <a href="#" class="btn btn-light">Order Online</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://weiyuanlee-if.github.io/heavenlybirdrestaurant/images/dimsumtable.png"
+                 alt="food"
+                 class="d-block w-100" />
+            <div class="carousel-caption ">
+                <h1>Order Online!</h1>
+                <p>
+                    Place an order online and have it delivered or pick up for takeout. Click order online now!
+                </p>
+                <a href="#" class="btn btn-light">Order Online</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <section class="deal-packages-container py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="text-white">DEAL PACKAGES</h1>
+                <p class="lead text-white">Check out our combination packages.</p>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+                        <img src="https://weiyuanlee-if.github.io/heavenlybirdrestaurant/images/sushibasket.png" class="d-block w-100" />
+                        <div class="card-body">
+                            <h3>FISH BASKET</h3>
+                            <p class="card-text">
+                                Get a whole baset of sushi and shrimp for $19.99. For sushi and seafood lovers.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+                        <img src="https://weiyuanlee-if.github.io/heavenlybirdrestaurant/images/chineseplatters.png" class="d-block w-100" />
+                        <div class="card-body">
+                            <h3>PU PU PLATTER</h3>
+                            <p class="card-text">Get every appetizer on the menu for only $30. For families and indecisive eaters.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="https://weiyuanlee-if.github.io/heavenlybirdrestaurant/images/dumplingcard.jpg"
+                             alt="food"
+                             class="d-block w-100" />
+                        <div class="card-body">
+                            <h2>DUMPING BASKET</h2>
+                            <p class="card-text">Get a basket of dumplings and wontons for only $19.99. For dumpling lovers.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class=" catering-container py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">EVENTS AND CATERING</h1>
+                        <p class="card-text">Planning a big birthday? Having dinner with the boss? Phoenix is the perfect setting for a family get-together or a corporate luncheon. We will accommodate your guests with self-serving bars and buffets in our party room. Catering is also available with a package of your choice.</p>
+                        <p>
+                            <a href="#" class="btn btn-outline-dark my-2">Book Now</a>
+                        </p>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/flagged/photo-1556742524-750f2ab99913?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+            class="img-fluid rounded my-5" alt="table ofcustomers eating food" />
+            </div>
+        </div>
+    </section>

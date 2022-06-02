@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=PT+Serif&display=swap");
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: "Montserrat",'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.social-ico > i {
+   color:#C4171D;
+}
+/*Carousel styling
+*/
+
+.carousel-item > img {
+    object-fit: cover;
+}
+
